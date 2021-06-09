@@ -3,3 +3,6 @@ div{
     color: antiquewhite;
     background: blue;
 }
+ul>li{
+    text-decoration: none;
+}
