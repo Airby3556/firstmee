@@ -1,46 +1,104 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
-body{
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     color: antiquewhite;
-    background: rgb(44, 40, 33);
+    background: linear-gradient(45deg, #513f28, #404c26);
+
 }
-.header_menu > li{
-    display:inline;
+
+.header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(#775f30, #475f28);
+    box-shadow: 0px 10px 20px rgb(214, 162, 72);
+
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
     list-style: none;
-    margin: 10px;
+    margin: 1em;
     font-size: large;
 }
-.header_menu > li > a {
+
+.menu>li>a {
+    margin-right: 30px;
     text-decoration: none;
     color: antiquewhite;
+    font-size: 1.5rem;
 }
-.header_img {
-    display: flex;
-    background: rgb(133, 123, 103);
-    align-items: center;
-}
- .header_img> img{
-     width: 150px;
-     height: 150px;
-     margin-right: 20em;
-     margin-left: 5px;
-     border-radius: 10px;
 
- }
- .main{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin-top: 20px;
- }
- .main>.main_first > img{
-     border-radius: 15px;
-     width: 80%;
-    
- }
+.menu>li>a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(175, 120, 76);
+    color: rgba(53, 29, 21, 0.851);
+
+}
+
+.header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5em;
+}
+
+.header>nav>.logo>img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20em;
+    margin-left: 5px;
+    border-radius: 10px;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+
+}
+
+.main>.main_imag {
+    margin: 20px 0;
+}
+
+.main>.main_foto1 {
+    margin-top: 200px;
+}
+
+.main>.main_imag>img {
+    border-radius: 15px;
+    max-width: 100%;
+    margin: 20px 0;
+    box-shadow: rgb(34, 31, 28) 0px 5px 5px 5px;
+
+}
+
+@media screen and (max-width:450px) {
+    .header>nav {
+        justify-content: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
