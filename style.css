@@ -1,8 +1,46 @@
-div{
-    border: 1px solid rgb(29, 29, 33);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
     color: antiquewhite;
-    background: blue;
+    background: rgb(44, 40, 33);
 }
-ul>li{
+.header_menu > li{
+    display:inline;
+    list-style: none;
+    margin: 10px;
+    font-size: large;
+}
+.header_menu > li > a {
     text-decoration: none;
+    color: antiquewhite;
 }
+.header_img {
+    display: flex;
+    background: rgb(133, 123, 103);
+    align-items: center;
+}
+ .header_img> img{
+     width: 150px;
+     height: 150px;
+     margin-right: 20em;
+     margin-left: 5px;
+     border-radius: 10px;
+
+ }
+ .main{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+ }
+ .main>.main_first > img{
+     border-radius: 15px;
+     width: 80%;
+    
+ }
