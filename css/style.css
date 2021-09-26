@@ -1,0 +1,102 @@
+/* FONT  font-family: 'Raleway', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: antiquewhite;
+    background: linear-gradient(45deg, #513f28, #404c26);
+
+}
+
+
+
+
+
+
+
+.header>nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5em;
+}
+
+.header>nav>.logo>img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20em;
+    margin-left: 5px;
+    border-radius: 10px;
+
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.main>.main_imag {
+    margin: 20px 0;
+}
+
+.main>.main_foto1 {
+    margin-top: 200px;
+}
+
+.main>.main_imag>img {
+    border-radius: 15px;
+    max-width: 100%;
+    margin: 20px 0;
+    box-shadow: rgb(34, 31, 28) 0px 5px 5px 5px;
+
+}
+
+@media screen and (max-width:450px) {
+    .header>nav {
+        justify-content: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+$navbar-padding-y:                  $spacer * .5;
+$navbar-padding-x:                  null;
+
+$navbar-nav-link-padding-x:         .5rem;
+
+$navbar-brand-font-size:            $font-size-lg;
+/* Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link*/
+$nav-link-height: 2;                  $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height:               $navbar-brand-font-size * $line-height-base;
+$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) * .5;
+$navbar-brand-margin-end:           1rem;
+
+$navbar-toggler-padding-y:          .25rem;
+$navbar-toggler-padding-x:          .75rem;
+$navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      $btn-border-radius;
+$navbar-toggler-focus-width:        $btn-focus-width;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
